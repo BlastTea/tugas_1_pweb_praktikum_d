@@ -1,0 +1,185 @@
+:root {
+    /* https://m3.material.io/styles/color/static/baseline */
+    --primary: #d0bcfe;
+    --on-primary: #381E72;
+
+    --secondary: #CCC2DC;
+    --on-secondary: #332D41;
+
+    --tertiary: #EFB8C8;
+    --on-tertiary: #492532;
+
+    --error: #F2B8B5;
+    --on-error: #601410;
+
+    --primary-container: #4F378B;
+    --on-primary-container: #EADDFF;
+
+    --secondary-container: #4A4458;
+    --on-secondary-container: #E8DEF8;
+
+    --tertiary-container: #633B48;
+    --on-tertiary-container: #FFD8E4;
+
+    --error-container: #8C1D18;
+    --on-error-container: #F9DEDC;
+
+    --primary-fixed: #EADDFF;
+    --primary-fixed-dim: #D0BCFF;
+    --on-primary-fixed: #21005D;
+    --on-primary-fixed-variant: #4F378B;
+
+    --secondary-fixed: #E8DEF8;
+    --secondary-fixed-dim: #CCC2DC;
+    --on-secondary-fixed: #1D192B;
+    --on-secondary-fixed-variant: #4A4458;
+
+    --tertiary-fixed: #FFD8E4;
+    --tertiary-fixed-dim: #EFB8C8;
+    --on-tertiary-fixed: #31111D;
+    --on-tertiary-fixed-variant: #633B48;
+
+    --surface-dim: #141218;
+    --surface: #141218;
+    --surface-bright: #3B383E;
+
+    --surface-container-lowest: #0F0D13;
+    --surface-container-low: #1D1B20;
+    --surface-container: #211F26;
+    --surface-container-high: #2B2930;
+    --surface-container-highest: #36343B;
+
+    --on-surface: #E6E0E9;
+    --on-surface-variant: #CAC4D0;
+    --outline: #938F99;
+    --outline-variant: #49454F;
+
+    --inverse-surface: #E6E0E9;
+    --inverse-on-surface: #322F35;
+    --inverse-primary: #6750a4;
+
+    --scrim: #000000;
+    --shadow: #000000;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, sans-serif;
+    background-color: var(--surface);
+}
+
+.container {
+    margin: auto;
+    padding: 4px;
+}
+
+.navbar {
+    background-color: var(--surface-container);
+    flex-wrap: wrap;
+}
+
+.nav-container-element {
+    margin: auto 16px;
+}
+
+.nav-link a {
+    margin-left: 16px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.nav-link a:hover {
+    background-color: var(--primary-container);
+}
+
+.title {
+    margin: 0px 8px;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.content {
+    display: flex;
+    padding: 32px;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: var(--surface-container-highest);
+    border-radius: 16px;
+}
+
+.card-left {
+    width: 300px;
+    height: 350px;
+}
+
+.card-right {
+    width: 600px;
+    height: 300px
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {
+    padding: 8px 16px;
+    color: var(--on-primary);
+    background-color: var(--primary);
+    border-color: var(--surface-bright);
+    border-style: solid;
+    box-sizing: border-box;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 13.3333px;
+    font-weight: 400;
+}
+
+.selected-indicator {
+    padding: 4px 16px;
+    background-color: var(--on-surface);
+    border-radius: 8px;
+}
+
+.indicator {
+    padding: 4px;
+    background-color: var(--on-surface);
+    border-radius: 8px;
+}
+
+.icon {
+    padding: 8px;
+    background-color: var(--on-surface);
+    border-radius: 8px;
+}
+
+nav {
+    display: flex;
+    padding: 16px 0px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+a,
+h1,
+p {
+    color: var(--on-surface);
+}
+
+/* large screens */
+@media (min-width: 768px) {}
+
+/* small screens */
+@media (max-width: 767px) {
+    .content {
+        flex-wrap: wrap;
+    }
+}
